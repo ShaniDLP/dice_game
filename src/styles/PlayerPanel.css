@@ -1,0 +1,38 @@
+.player-panel-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.player-panel {
+  border: 2px solid #ddd;
+  padding: 10px;
+  width: 200px;        
+  height: 150px;    
+  border-radius: 8px;
+  text-align: center;
+  background-color: #fff;
+  transition: background-color 0.3s ease, border-color 0.3s ease, transform 0.3s ease;
+}
+
+.player-panel.active {
+  border-color: var(--primary);
+  background-color: var(--primary);
+  color: #fff;
+}
+
+.player-panel:hover {
+  transform: scale(1.02);
+}
+
+.turn-indicator-outside {
+  margin-top: 5px;
+  font-weight: bold;
+  color: var(--primary);
+}
+
+.win-count {
+  margin-top: 5px;
+  font-size: 16px;
+  color: var(--text-dark);
+}

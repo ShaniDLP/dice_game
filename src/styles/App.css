@@ -1,0 +1,43 @@
+:root {
+  --primary: #3399ff;
+  --primary-light: #66b3ff;
+  --primary-dark: #287ac1;
+  --background: #f4f4f4;
+  --text-dark: #333;
+  --text-light: #fff;
+}
+
+.App {
+  text-align: center;
+  font-family: 'Mulish', sans-serif;
+  padding: 20px;
+  background-color: var(--background);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Responsive adjustments for mobile */
+@media (max-width: 600px) {
+  .player-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+}
+
+.player-container {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px auto;
+}
+
+.winner {
+  margin-top: 20px;
+  color: var(--primary);
+  font-size: 24px;
+}
